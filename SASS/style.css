@@ -282,7 +282,7 @@ header nav i {
 
 #seasame {
   display: none;
-  z-index: 2;
+  z-index: 9;
 }
 
 #seasame #navExt {
