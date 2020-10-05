@@ -1,9 +1,20 @@
 var toggle = $("#toggle");
 var seasame = $("#seasame");
-var vh = window.innerHeight;
-var radius = 2.5 * vh + "px";
+var header = $("header");
+var vanish = function () {
+    if (seasame.css("display") != "none") {
+        seasame.hide("swing");
+        //remove the X
+        toggle.toggleClass("fas fa-times ");
+        //insert the hamburger
+        toggle.toggleClass("fas fa-bars ");
+    }
+};
 toggle.click(function () {
     seasame.toggle("swing");
+    //remove the hamburger
+    toggle.toggleClass("fas fa-bars ");
+    //insert the X
     toggle.toggleClass("fas fa-times");
-    toggle.toggleClass("fas fa-bars");
 });
+seasame.on("mouseleave", vanish);
