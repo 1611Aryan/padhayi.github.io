@@ -35,6 +35,69 @@
             transform-origin: top;
     transform-box: fill-box;
   }
+  #seasame {
+    display: none;
+    z-index: 9;
+  }
+  #seasame #navExt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    border: none;
+    -webkit-transform: none;
+            transform: none;
+    background-color: #FFA800;
+    opacity: 0.9;
+  }
+  #seasame #navExt #organize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(-50%, -50%) scale(1.1, 1.1);
+            transform: translate(-50%, -50%) scale(1.1, 1.1);
+    z-index: 2;
+  }
+  #seasame #navExt #organize div:hover svg {
+    -webkit-transform: rotateY(5deg);
+            transform: rotateY(5deg);
+  }
+  #seasame #navExt #organize div:hover svg path {
+    fill: #fcf37a;
+  }
+  #seasame #navExt #organize svg {
+    margin-bottom: 2rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #seasame #navExt #organize span {
+    position: absolute;
+    display: inline-block;
+    margin-top: 2rem;
+    left: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 3;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -144,7 +207,7 @@
     -webkit-transform: none;
             transform: none;
     background-color: #FFA800;
-    opacity: 0.75;
+    opacity: 0.9;
   }
   #seasame #navExt #organize {
     position: absolute;
@@ -163,8 +226,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%) scale(0.7, 0.65);
+            transform: translate(-50%, -50%) scale(0.7, 0.65);
     z-index: 2;
   }
   #seasame #navExt #organize div:hover svg {
