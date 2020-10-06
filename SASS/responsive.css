@@ -1,0 +1,301 @@
+@media (max-height: 1370px) {
+  #girl svg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 60%;
+  }
+  #girl svg #plant {
+    -webkit-animation: leaf 3s ease-in-out infinite;
+            animation: leaf 3s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  #girl svg #leftShoe {
+    -webkit-animation: left 3s ease-in-out infinite alternate;
+            animation: left 3s ease-in-out infinite alternate;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transform-box: fill-box;
+  }
+  #girl svg #rightShoe {
+    -webkit-animation: right 5s ease-in-out infinite alternate;
+            animation: right 5s ease-in-out infinite alternate;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-box: fill-box;
+  }
+  #girl svg #faceMain,
+  #girl svg #hairTop {
+    -webkit-animation: nod 2s ease-in-out infinite;
+            animation: nod 2s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transform-box: fill-box;
+  }
+}
+
+@media (max-width: 1170px) {
+  #tabs {
+    width: 100%;
+    margin-left: -20vw;
+    -webkit-transform: translateY(-50%) scale(0.7, 0.65);
+            transform: translateY(-50%) scale(0.7, 0.65);
+  }
+  #tabs span {
+    position: absolute;
+    font-size: 54px;
+    font-weight: 300;
+    margin: 2% 15%;
+    cursor: pointer;
+    z-index: 99;
+  }
+  #girl svg {
+    position: absolute;
+    right: 0;
+    bottom: -13vh;
+    width: 45%;
+  }
+  #girl svg #plant {
+    -webkit-animation: leaf 3s ease-in-out infinite;
+            animation: leaf 3s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  #girl svg #leftShoe {
+    -webkit-animation: left 3s ease-in-out infinite alternate;
+            animation: left 3s ease-in-out infinite alternate;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transform-box: fill-box;
+  }
+  #girl svg #rightShoe {
+    -webkit-animation: right 5s ease-in-out infinite alternate;
+            animation: right 5s ease-in-out infinite alternate;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-box: fill-box;
+  }
+  #girl svg #faceMain,
+  #girl svg #hairTop {
+    -webkit-animation: nod 2s ease-in-out infinite;
+            animation: nod 2s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transform-box: fill-box;
+  }
+}
+
+@media (max-width: 768px) {
+  #tabs {
+    width: 100%;
+    margin-left: -27vw;
+    -webkit-transform: translateY(-50%) scale(0.5, 0.55);
+            transform: translateY(-50%) scale(0.5, 0.55);
+  }
+  #girl svg {
+    position: absolute;
+    right: 0;
+    bottom: -14vh;
+    width: 50%;
+  }
+  #girl svg #plant {
+    -webkit-animation: leaf 3s ease-in-out infinite;
+            animation: leaf 3s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  #girl svg #leftShoe {
+    -webkit-animation: left 3s ease-in-out infinite alternate;
+            animation: left 3s ease-in-out infinite alternate;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transform-box: fill-box;
+  }
+  #girl svg #rightShoe {
+    -webkit-animation: right 5s ease-in-out infinite alternate;
+            animation: right 5s ease-in-out infinite alternate;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-box: fill-box;
+  }
+  #girl svg #faceMain,
+  #girl svg #hairTop {
+    -webkit-animation: nod 2s ease-in-out infinite;
+            animation: nod 2s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transform-box: fill-box;
+  }
+  #seasame {
+    display: none;
+    z-index: 9;
+  }
+  #seasame #navExt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    border: none;
+    -webkit-transform: none;
+            transform: none;
+    background-color: #FFA800;
+    opacity: 0.75;
+  }
+  #seasame #navExt #organize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  #seasame #navExt #organize div:hover svg {
+    -webkit-transform: rotateY(5deg);
+            transform: rotateY(5deg);
+  }
+  #seasame #navExt #organize div:hover svg path {
+    fill: #fcf37a;
+  }
+  #seasame #navExt #organize svg {
+    margin-bottom: 2rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #seasame #navExt #organize span {
+    position: absolute;
+    display: inline-block;
+    margin-top: 2rem;
+    left: 50%;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    z-index: 3;
+  }
+}
+
+@media (max-width: 650px) {
+  #girl svg {
+    position: absolute;
+    right: 0;
+    bottom: -14vh;
+    width: 50%;
+  }
+  #girl svg #plant {
+    -webkit-animation: leaf 3s ease-in-out infinite;
+            animation: leaf 3s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  #girl svg #leftShoe {
+    -webkit-animation: left 3s ease-in-out infinite alternate;
+            animation: left 3s ease-in-out infinite alternate;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transform-box: fill-box;
+  }
+  #girl svg #rightShoe {
+    -webkit-animation: right 5s ease-in-out infinite alternate;
+            animation: right 5s ease-in-out infinite alternate;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-box: fill-box;
+  }
+  #girl svg #faceMain,
+  #girl svg #hairTop {
+    -webkit-animation: nod 2s ease-in-out infinite;
+            animation: nod 2s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transform-box: fill-box;
+  }
+}
+
+@media (max-width: 550px) {
+  #girl svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: -1;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    opacity: 0.65;
+  }
+  #girl svg #plant {
+    -webkit-animation: leaf 3s ease-in-out infinite;
+            animation: leaf 3s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  #girl svg #leftShoe {
+    -webkit-animation: left 3s ease-in-out infinite alternate;
+            animation: left 3s ease-in-out infinite alternate;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    transform-box: fill-box;
+  }
+  #girl svg #rightShoe {
+    -webkit-animation: right 5s ease-in-out infinite alternate;
+            animation: right 5s ease-in-out infinite alternate;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-box: fill-box;
+  }
+  #girl svg #faceMain,
+  #girl svg #hairTop {
+    -webkit-animation: nod 2s ease-in-out infinite;
+            animation: nod 2s ease-in-out infinite;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    transform-box: fill-box;
+  }
+  #tabs {
+    position: absolute;
+    top: 50%;
+    left: 27.5%;
+    width: 100%;
+    -webkit-transform: translateY(-50%) scale(0.65, 0.6);
+            transform: translateY(-50%) scale(0.65, 0.6);
+  }
+  #tabs span {
+    position: absolute;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1.5rem 0;
+    margin-left: clamp(0.1rem, 12.5%, 5rem);
+    cursor: pointer;
+    z-index: 99;
+  }
+}
+
+@media (max-width: 380px) {
+  #tabs span {
+    font-size: 2.5rem;
+    margin: 2.5rem 0;
+    margin-left: clamp(0.1rem, 15.5%, 5rem);
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

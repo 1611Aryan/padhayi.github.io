@@ -1,0 +1,274 @@
+///////////////media query for height
+//@media (max-height:670px) {
+//#girl {
+//    #svg {
+//        position: absolute;
+//        right: 0;
+//         bottom: -5vh;
+//          width: 10%;
+//   }
+//}
+///////////////media query for height
+@media (max-height:1370px) {
+    #girl {
+        svg {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60%;
+            #plant {
+                animation: leaf 3s ease-in-out infinite;
+                transform-origin: top;
+            }
+            #leftShoe {
+                animation: left 3s ease-in-out infinite alternate;
+                transform-origin: right;
+                transform-box: fill-box;
+            }
+            #rightShoe {
+                animation: right 5s ease-in-out infinite alternate;
+                transform-origin: left;
+                transform-box: fill-box;
+            }
+            #faceMain,
+            #hairTop {
+                animation: nod 2s ease-in-out infinite;
+                transform-origin: top;
+                transform-box: fill-box;
+            }
+        }
+    }
+}
+
+////////width
+@media (max-width:1170px) {
+    #tabs {
+        width: 100%;
+        margin-left: -20vw;
+        transform: translateY(-50%)scale(0.7, 0.65);
+        span {
+            position: absolute;
+            font-size: 54px;
+            font-weight: 300;
+            margin: 2% 15%;
+            cursor: pointer;
+            z-index: 99;
+        }
+    }
+    #girl {
+        svg {
+            position: absolute;
+            right: 0;
+            bottom: -13vh;
+            width: 45%;
+            #plant {
+                animation: leaf 3s ease-in-out infinite;
+                transform-origin: top;
+            }
+            #leftShoe {
+                animation: left 3s ease-in-out infinite alternate;
+                transform-origin: right;
+                transform-box: fill-box;
+            }
+            #rightShoe {
+                animation: right 5s ease-in-out infinite alternate;
+                transform-origin: left;
+                transform-box: fill-box;
+            }
+            #faceMain,
+            #hairTop {
+                animation: nod 2s ease-in-out infinite;
+                transform-origin: top;
+                transform-box: fill-box;
+            }
+        }
+    }
+}
+
+/////////tablet
+@media (max-width:768px) {
+    #tabs {
+        width: 100%;
+        margin-left: -27vw;
+        transform: translateY(-50%)scale(0.5, 0.55);
+    }
+    #girl {
+        svg {
+            position: absolute;
+            right: 0;
+            bottom: -14vh;
+            width: 50%;
+            #plant {
+                animation: leaf 3s ease-in-out infinite;
+                transform-origin: top;
+            }
+            #leftShoe {
+                animation: left 3s ease-in-out infinite alternate;
+                transform-origin: right;
+                transform-box: fill-box;
+            }
+            #rightShoe {
+                animation: right 5s ease-in-out infinite alternate;
+                transform-origin: left;
+                transform-box: fill-box;
+            }
+            #faceMain,
+            #hairTop {
+                animation: nod 2s ease-in-out infinite;
+                transform-origin: top;
+                transform-box: fill-box;
+            }
+        }
+    }
+    #seasame {
+        display: none;
+        z-index: 9;
+        #navExt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 0%;
+            border: none;
+            transform: none;
+            background-color: #FFA800;
+            opacity: 0.75;
+            #organize {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                div {
+                    &:hover {
+                        svg {
+                            transform: rotateY(5deg);
+                            path {
+                                fill: #fcf37a;
+                            }
+                        }
+                    }
+                }
+                svg {
+                    margin-bottom: 2rem;
+                    transform: scale(0.8);
+                }
+                span {
+                    position: absolute;
+                    display: inline-block;
+                    margin-top: 2rem;
+                    left: 50%;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2rem;
+                    transform: translate(-50%);
+                    z-index: 3;
+                }
+            }
+        }
+    }
+}
+
+//reducing girl's size
+@media (max-width:650px) {
+    #girl {
+        svg {
+            position: absolute;
+            right: 0;
+            bottom: -14vh;
+            width: 50%;
+            #plant {
+                animation: leaf 3s ease-in-out infinite;
+                transform-origin: top;
+            }
+            #leftShoe {
+                animation: left 3s ease-in-out infinite alternate;
+                transform-origin: right;
+                transform-box: fill-box;
+            }
+            #rightShoe {
+                animation: right 5s ease-in-out infinite alternate;
+                transform-origin: left;
+                transform-box: fill-box;
+            }
+            #faceMain,
+            #hairTop {
+                animation: nod 2s ease-in-out infinite;
+                transform-origin: top;
+                transform-box: fill-box;
+            }
+        }
+    }
+}
+
+////mobile start
+@media (max-width:550px) {
+    #girl {
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            z-index: -1;
+            filter: brightness(50%);
+            opacity: 0.65;
+            #plant {
+                animation: leaf 3s ease-in-out infinite;
+                transform-origin: top;
+            }
+            #leftShoe {
+                animation: left 3s ease-in-out infinite alternate;
+                transform-origin: right;
+                transform-box: fill-box;
+            }
+            #rightShoe {
+                animation: right 5s ease-in-out infinite alternate;
+                transform-origin: left;
+                transform-box: fill-box;
+            }
+            #faceMain,
+            #hairTop {
+                animation: nod 2s ease-in-out infinite;
+                transform-origin: top;
+                transform-box: fill-box;
+            }
+        }
+    }
+    #tabs {
+        position: absolute;
+        top: 50%;
+        left: 27.5%;
+        width: 100%;
+        transform: translateY(-50%) scale(0.65, 0.60);
+        //width: 50%;
+        span {
+            position: absolute;
+            width: 100%;
+            font-size: 3rem;
+            font-weight: 300;
+            margin: 1.5rem 0;
+            margin-left: clamp(0.1rem, 12.5%, 5rem);
+            //letter-spacing: 0.2rem;
+            cursor: pointer;
+            z-index: 99;
+        }
+    }
+}
+
+/////smallest width
+@media (max-width:380px) {
+    #tabs {
+        span {
+            font-size: 2.5rem;
+            margin: 2.5rem 0;
+            margin-left: clamp(0.1rem, 15.5%, 5rem);
+        }
+    }
+}
