@@ -1,0 +1,60 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main a section {
+  width: 25vw;
+  height: 27.33vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.8;
+}
+
+main a section::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #2e2d2d;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: skew(-41deg);
+          transform: skew(-41deg);
+}
+
+main a section::after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  height: 100%;
+  width: 9px;
+  background-color: #2e2d2d;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: skew(0, -49deg);
+          transform: skew(0, -49deg);
+}
+
+main a section span {
+  color: black;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=streams.css.map */
