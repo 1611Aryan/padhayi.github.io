@@ -1,5 +1,5 @@
-var addSubject1 = function (subject) {
-    var section = '<a href=""><section><span>' + subject + "</span></section></a>";
+var addSubject1 = function(subject) {
+    var section = '<a href=""><section><div><span>' + subject + "</span></div></section></a>";
     $("main").append(section);
 };
 var streams1 = ["Computer Engineering", "Electronics"];

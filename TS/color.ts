@@ -12,6 +12,6 @@ let randColor = () => {
   }
 };
 
-for (let i = 1; i <= noOfSubjects; i++) {
+for (let i = 1; i <= noOfSubjects1; i++) {
   $("section:nth-child(" + i + ")").css("backgroundColor", randColor);
 }
