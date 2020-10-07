@@ -45,5 +45,5 @@ $("#button").on("click touch", () => {
 });
 
 $("#toggle").on("click touch", () => {
-  $("buttons").toggleClass("bye");
+  $("#buttons").toggle();
 });

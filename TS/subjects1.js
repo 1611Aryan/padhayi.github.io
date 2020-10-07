@@ -41,5 +41,5 @@ $("#button").on("click touch", function () {
     $("#button").toggleClass("fa-angle-right");
 });
 $("#toggle").on("click touch", function () {
-    $("buttons").toggleClass("bye");
+    $("#buttons").toggle();
 });
