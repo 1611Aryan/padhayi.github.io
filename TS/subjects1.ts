@@ -38,12 +38,12 @@ for (let i = 8; i < noOfSubjects1; i++) {
 
 ////*pageChange
 $("#button").on("click touch", () => {
-  $("#page2").toggle();
-  $("#page1").toggle();
+  $("#page2").toggle("slow");
+  $("#page1").toggle("slow");
   $("#button").toggleClass("fa-angle-left");
   $("#button").toggleClass("fa-angle-right");
 });
 
 $("#toggle").on("click touch", () => {
-  $("#buttons").toggle();
+  $("#buttons").toggle("swing");
 });
