@@ -1,0 +1,87 @@
+main {
+  width: 100%;
+  height: 82vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main a section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25vw;
+  height: 20.5vh;
+  opacity: 0.8;
+  overflow: visible;
+  -webkit-box-shadow: -2px 8px 6px #00000050;
+          box-shadow: -2px 8px 6px #00000050;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
+          transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
+  -webkit-transition: 0.7s -webkit-transform;
+  transition: 0.7s -webkit-transform;
+  transition: 0.7s transform;
+  transition: 0.7s transform, 0.7s -webkit-transform;
+}
+
+main a section::before {
+  content: '';
+  position: absolute;
+  bottom: -5.5px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: inherit;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: skew(-41deg, 0);
+          transform: skew(-41deg, 0);
+}
+
+main a section::after {
+  content: '';
+  position: absolute;
+  left: -4.5px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: inherit;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: skew(0, -49deg);
+          transform: skew(0, -49deg);
+  z-index: 2;
+}
+
+main a section:hover {
+  -webkit-transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75);
+          transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75);
+}
+
+main a section span {
+  text-align: center;
+  color: black;
+  font-size: clamp(0.8rem, 2vw, 2.2rem);
+}
+/*# sourceMappingURL=streams1.css.map */
