@@ -4,15 +4,16 @@ main {
     a {
         text-decoration: none;
         section {
+            z-index: -1;
             width: 25vw;
             height: 27.33vh;
             display: flex;
             justify-content: center;
             align-items: center;
             opacity: 0.8;
-            //transform-style: preserve-3d;
+            transform-style: preserve-3d;
             //rotate
-            //transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
+            transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
             &::before {
                 content: '';
                 position: absolute;
