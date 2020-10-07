@@ -43,3 +43,7 @@ $("#button").on("click touch", () => {
   $("#button").toggleClass("fa-angle-left");
   $("#button").toggleClass("fa-angle-right");
 });
+
+$("#toggle").on("click touch", () => {
+  $("buttons").toggleClass("bye");
+});
