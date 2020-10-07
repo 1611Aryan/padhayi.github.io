@@ -134,7 +134,7 @@ main a section span {
   main {
     position: absolute;
     left: 0;
-    top: 8vh;
+    top: 9vh;
     bottom: 12vh;
     width: 100%;
     display: -webkit-box;
@@ -160,7 +160,7 @@ main a section span {
         -ms-flex-align: center;
             align-items: center;
     width: 50vw;
-    height: 19vh;
+    height: 18vh;
     opacity: 0.8;
     overflow: visible;
     -webkit-box-shadow: -2px 8px 6px #00000050;
