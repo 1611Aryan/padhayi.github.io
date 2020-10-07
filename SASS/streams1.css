@@ -1,4 +1,7 @@
 main {
+  position: absolute;
+  left: 0;
+  top: 8vh;
   width: 100%;
   height: 82vh;
   display: -webkit-box;
@@ -26,7 +29,7 @@ main a section {
       -ms-flex-align: center;
           align-items: center;
   width: 25vw;
-  height: 20.5vh;
+  height: 40vh;
   opacity: 0.8;
   overflow: visible;
   -webkit-box-shadow: -2px 8px 6px #00000050;
@@ -83,5 +86,42 @@ main a section span {
   text-align: center;
   color: black;
   font-size: clamp(0.8rem, 2vw, 2.2rem);
+}
+
+#buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 12vh;
+  width: clamp(60px, 20vw, 90px);
+  height: 6vh;
+  border-radius: 25px;
+  background-color: #444444;
+  opacity: 0.8;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99999;
+}
+
+#buttons i {
+  font-size: clamp(2.3em, 5vw, 3rem);
+  color: #000000;
+  cursor: pointer;
+}
+
+#buttons i:hover {
+  color: #e4e4e4;
+}
+
+#page2 {
+  z-index: 99;
+  display: none;
 }
 /*# sourceMappingURL=streams1.css.map */
