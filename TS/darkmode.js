@@ -55,4 +55,4 @@ $("#darkModeToggle").on("click touch", function () {
     console.log(sessionStorage.getItem("memory"));
 });
 ////////////////////////
-setInterval(darkCSS, 100);
+setInterval(darkCSS, 10);

@@ -62,4 +62,4 @@ $("#darkModeToggle").on("click touch", () => {
 
 ////////////////////////
 
-setInterval(darkCSS, 100);
+setInterval(darkCSS, 10);
