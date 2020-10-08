@@ -84,6 +84,20 @@
                  transform: translate(-50%);
                  z-index: 3;
              }
+             button {
+                 width: clamp(25rem, 8vw, 35rem);
+                 height: clamp(5rem, 5vh, 8rem);
+                 border-radius: 45px;
+                 outline: none;
+                 border: none;
+                 font-size: 2rem;
+                 cursor: pointer;
+                 background-color: #ffffff;
+                 &:hover {
+                     transform: rotateY(10deg);
+                     background-color: #fcf37a !important;
+                 }
+             }
          }
      }
  }

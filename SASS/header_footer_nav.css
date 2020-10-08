@@ -1,108 +1,219 @@
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
-    width: 100vw;
-    height: 8vh;
-    background-color: #d8d8d8;
+  width: 100vw;
+  height: 8vh;
+  background-color: #d8d8d8;
 }
 
 header nav {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav a {
-    text-decoration: none;
-    color: black;
-    margin-left: 1rem;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
+  font-size: 1.5rem;
 }
 
 header nav i {
-    font-size: 2rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    z-index: 9;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  z-index: 9;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #seasame {
-    display: none;
-    z-index: 9;
+  display: none;
+  z-index: 9;
 }
 
 #seasame #navExt {
-    position: absolute;
-    top: 0;
-    right: 0;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
-    width: 250vh;
-    height: 250vh;
-    border-radius: 50%;
-    border: 2px solid #000000;
-    background-color: #FFA800;
-    opacity: 0.75;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 250vh;
+  height: 250vh;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background-color: #FFA800;
+  opacity: 0.75;
 }
 
 #seasame #navExt #organize {
+  position: absolute;
+  top: 175vh;
+  left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+#seasame #navExt #organize div:hover svg {
+  -webkit-transform: rotateY(5deg);
+          transform: rotateY(5deg);
+}
+
+#seasame #navExt #organize div:hover svg path {
+  fill: #fcf37a;
+}
+
+#seasame #navExt #organize svg {
+  margin-bottom: 2rem;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#seasame #navExt #organize span {
+  position: absolute;
+  display: inline-block;
+  margin-top: 2rem;
+  left: 50%;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 3;
+}
+
+#seasame #navExt #organize button {
+  width: clamp(25rem, 8vw, 35rem);
+  height: clamp(5rem, 5vh, 8rem);
+  border-radius: 45px;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+#seasame #navExt #organize button:hover {
+  -webkit-transform: rotateY(10deg);
+          transform: rotateY(10deg);
+  background-color: #fcf37a !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background-color: #d8d8d8;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer h2 {
+  margin-left: 1.5rem;
+  width: 50%;
+  font-size: 1.8rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  padding: 0 0.2rem;
+}
+
+@media (max-width: 768px) {
+  #seasame {
+    display: none;
+    z-index: 9;
+  }
+  #seasame #navExt {
     position: absolute;
-    top: 175vh;
-    left: 25%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+    border: none;
+    -webkit-transform: none;
+            transform: none;
+    background-color: #FFA800;
+    opacity: 0.9;
+  }
+  #seasame #navExt #organize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translate(-50%, -50%) scale(0.7, 0.65);
+            transform: translate(-50%, -50%) scale(0.7, 0.65);
     z-index: 2;
-}
-
-#seasame #navExt #organize div:hover svg {
+  }
+  #seasame #navExt #organize div:hover svg {
     -webkit-transform: rotateY(5deg);
-    transform: rotateY(5deg);
-}
-
-#seasame #navExt #organize div:hover svg path {
+            transform: rotateY(5deg);
+  }
+  #seasame #navExt #organize div:hover svg path {
     fill: #fcf37a;
-}
-
-#seasame #navExt #organize svg {
+  }
+  #seasame #navExt #organize svg {
     margin-bottom: 2rem;
     -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-}
-
-#seasame #navExt #organize span {
+            transform: scale(0.8);
+  }
+  #seasame #navExt #organize span {
     position: absolute;
     display: inline-block;
     margin-top: 2rem;
@@ -111,104 +222,8 @@ header nav i {
     color: black;
     font-size: 2rem;
     -webkit-transform: translate(-50%);
-    transform: translate(-50%);
+            transform: translate(-50%);
     z-index: 3;
+  }
 }
-
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 10vh;
-    background-color: #d8d8d8;
-    z-index: -1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-footer h2 {
-    margin-left: 1.5rem;
-    width: 50%;
-    font-size: 1.8rem;
-}
-
-footer i {
-    font-size: 1.5rem;
-    padding: 0 0.2rem;
-}
-
-@media (max-width: 768px) {
-    #seasame {
-        display: none;
-        z-index: 9;
-    }
-    #seasame #navExt {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 0%;
-        border: none;
-        -webkit-transform: none;
-        transform: none;
-        background-color: #FFA800;
-        opacity: 0.9;
-    }
-    #seasame #navExt #organize {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-transform: translate(-50%, -50%) scale(0.7, 0.65);
-        transform: translate(-50%, -50%) scale(0.7, 0.65);
-        z-index: 2;
-    }
-    #seasame #navExt #organize div:hover svg {
-        -webkit-transform: rotateY(5deg);
-        transform: rotateY(5deg);
-    }
-    #seasame #navExt #organize div:hover svg path {
-        fill: #fcf37a;
-    }
-    #seasame #navExt #organize svg {
-        margin-bottom: 2rem;
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
-    }
-    #seasame #navExt #organize span {
-        position: absolute;
-        display: inline-block;
-        margin-top: 2rem;
-        left: 50%;
-        text-decoration: none;
-        color: black;
-        font-size: 2rem;
-        -webkit-transform: translate(-50%);
-        transform: translate(-50%);
-        z-index: 3;
-    }
-}
-
-
 /*# sourceMappingURL=header_footer_nav.css.map */

@@ -22,6 +22,9 @@
   stroke-width: 2px;
   -webkit-filter: saturate(150%);
           filter: saturate(150%);
+}
+
+#tabs div:hover span {
   color: white;
 }
 

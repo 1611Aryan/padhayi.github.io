@@ -15,7 +15,9 @@
             stroke: #8f8f8f;
             stroke-width: 2px;
             filter: saturate(150%);
-            color: white;
+            span {
+                color: white;
+            }
         }
         a {
             text-decoration: none;
