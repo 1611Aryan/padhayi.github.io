@@ -97,10 +97,11 @@ main {
 
 @media (max-width:700px) {
     main {
+        z-index: 9;
         position: absolute;
         left: 0;
         top: 10vh;
-        bottom: 12vh;
+        bottom: 10vh;
         width: 100%;
         display: flex;
         justify-content: space-between;
