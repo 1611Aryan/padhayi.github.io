@@ -143,7 +143,7 @@
     border: none;
     -webkit-transform: none;
             transform: none;
-    background-color: #FFA800;
+    background-color: var(--navMenu);
     opacity: 0.9;
   }
   #seasame #navExt #organize {
@@ -172,7 +172,7 @@
             transform: rotateY(5deg);
   }
   #seasame #navExt #organize div:hover svg path {
-    fill: #fcf37a;
+    fill: var(--navHover);
   }
   #seasame #navExt #organize svg {
     margin-bottom: 2rem;
@@ -185,7 +185,7 @@
     margin-top: 2rem;
     left: 50%;
     text-decoration: none;
-    color: black;
+    color: var(--text);
     font-size: 2rem;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);

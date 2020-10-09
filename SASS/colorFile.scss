@@ -1,0 +1,68 @@
+html {
+    --text: #000000;
+    --backgroundColor: #ffffff;
+    ////*header///
+    --headerColor: #d8d8d8;
+    //*extnav/////
+    --navMenu: #FFA800;
+    --navBorder: #000000;
+    --navHover: #fcf37a;
+    //*switch//////
+    --switch: #ffffff;
+    --switchButton: #000000;
+    //*tabs///////////
+    --tabFont: #ffffff;
+    //*main//////////////
+    --subjectShadow: #00000050;
+    //*button//////////
+    --buttonBox: #444444;
+    --button: #000000;
+    --buttonHover: #e4e4e4;
+    //*footer////
+    --footerColor: #d8d8d8;
+}
+
+html[data-theme='dark'] {
+    --text: #000000;
+    --backgroundColor: #555555;
+    ////*header///
+    --headerColor: #222222;
+    //*extnav/////
+    --navMenu: #d18d04;
+    --navBorder: #000000;
+    --navHover: #fcf37a;
+    //*switch//////
+    --switch: #000000;
+    --switchButton: #ffffff;
+    //*tabs///////////
+    --tabFont: #ffffff;
+    //*main//////////////
+    --subjectShadow: #00000050;
+    //*button//////////
+    --buttonBox: #444444;
+    --button: #000000;
+    --buttonHover: #e4e4e4;
+    //*footer////
+    --footerColor: #222222;
+    #tabs {
+        filter: brightness(90%) !important;
+        div {
+            transition: 0.5s;
+            &:hover {
+                filter: saturate(150%) brightness(90%) !important;
+                span {
+                    color: #eeeeee;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    #girl {
+        svg {
+            filter: brightness(90%) !important;
+        }
+    }
+    filter: saturate(120%) brightness(90%) contrast(90%) !important;
+}

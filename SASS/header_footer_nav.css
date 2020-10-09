@@ -6,14 +6,25 @@
   overflow: hidden;
 }
 
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  -webkit-transition: all 750ms !important;
+  transition: all 750ms !important;
+  -webkit-transition-delay: 0 !important;
+          transition-delay: 0 !important;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--backgroundColor);
 }
 
 header {
   width: 100vw;
   height: 8vh;
-  background-color: #d8d8d8;
+  background-color: var(--headerColor);
 }
 
 header nav {
@@ -31,19 +42,28 @@ header nav {
 }
 
 header nav a {
+  color: var(--text);
   text-decoration: none;
-  color: black;
   margin-left: 1rem;
   font-size: 1.5rem;
 }
 
+header nav a:hover {
+  color: var(--tabFont);
+}
+
 header nav i {
+  color: var(--text);
   font-size: 2rem;
   margin-right: 1rem;
   cursor: pointer;
   z-index: 9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+header nav i:hover {
+  color: var(--tabFont);
 }
 
 #seasame {
@@ -60,8 +80,8 @@ header nav i {
   width: 250vh;
   height: 250vh;
   border-radius: 50%;
-  border: 2px solid #000000;
-  background-color: #FFA800;
+  border: 2px solid var(--navBorder);
+  background-color: var(--navMenu);
   opacity: 0.75;
 }
 
@@ -93,7 +113,7 @@ header nav i {
 }
 
 #seasame #navExt #organize div:hover svg path {
-  fill: #fcf37a;
+  fill: var(--navHover);
 }
 
 #seasame #navExt #organize svg {
@@ -108,28 +128,73 @@ header nav i {
   margin-top: 2rem;
   left: 50%;
   text-decoration: none;
-  color: black;
+  color: var(--text);
   font-size: 2rem;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   z-index: 3;
 }
 
-#seasame #navExt #organize button {
-  width: clamp(25rem, 8vw, 35rem);
-  height: clamp(5rem, 5vh, 8rem);
-  border-radius: 45px;
-  outline: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  background-color: #ffffff;
+#seasame #navExt #organize #switchHouse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#seasame #navExt #organize button:hover {
-  -webkit-transform: rotateY(10deg);
-          transform: rotateY(10deg);
-  background-color: #fcf37a !important;
+#seasame #navExt #organize #switchHouse p {
+  color: var(--text);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+#seasame #navExt #organize #switchHouse input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+#seasame #navExt #organize #switchHouse label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 52px;
+  height: 27px;
+  background: var(--switch);
+  float: right;
+  border-radius: 100px;
+  position: relative;
+}
+
+#seasame #navExt #organize #switchHouse label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: var(--switchButton);
+  border-radius: 90px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#seasame #navExt #organize #switchHouse input:checked + label {
+  background: var(--switch);
+}
+
+#seasame #navExt #organize #switchHouse input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+#seasame #navExt #organize #switchHouse label:active:after {
+  width: 45px;
 }
 
 footer {
@@ -138,7 +203,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 10vh;
-  background-color: #d8d8d8;
+  background-color: var(--footerColor);
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,12 +214,16 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--text);
 }
 
 footer h2 {
   margin-left: 1.5rem;
-  width: 50%;
   font-size: 1.8rem;
+}
+
+footer h2:hover {
+  color: var(--tabFont);
 }
 
 footer i {
@@ -162,68 +231,7 @@ footer i {
   padding: 0 0.2rem;
 }
 
-@media (max-width: 768px) {
-  #seasame {
-    display: none;
-    z-index: 9;
-  }
-  #seasame #navExt {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 0%;
-    border: none;
-    -webkit-transform: none;
-            transform: none;
-    background-color: #FFA800;
-    opacity: 0.9;
-  }
-  #seasame #navExt #organize {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-transform: translate(-50%, -50%) scale(0.7, 0.65);
-            transform: translate(-50%, -50%) scale(0.7, 0.65);
-    z-index: 2;
-  }
-  #seasame #navExt #organize div:hover svg {
-    -webkit-transform: rotateY(5deg);
-            transform: rotateY(5deg);
-  }
-  #seasame #navExt #organize div:hover svg path {
-    fill: #fcf37a;
-  }
-  #seasame #navExt #organize svg {
-    margin-bottom: 2rem;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  #seasame #navExt #organize span {
-    position: absolute;
-    display: inline-block;
-    margin-top: 2rem;
-    left: 50%;
-    text-decoration: none;
-    color: black;
-    font-size: 2rem;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
-    z-index: 3;
-  }
+footer i:hover {
+  color: var(--tabFont);
 }
 /*# sourceMappingURL=header_footer_nav.css.map */

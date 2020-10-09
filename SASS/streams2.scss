@@ -20,7 +20,7 @@ main {
             //height: 20vh;
             opacity: 0.8;
             overflow: visible;
-            box-shadow: -2px 8px 6px #00000050;
+            box-shadow: -2px 8px 6px var(--subjectShadow);
             transform-style: preserve-3d;
             transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
             transition: 0.7s transform;
@@ -54,7 +54,7 @@ main {
             }
             span {
                 text-align: center;
-                color: black;
+                color: var(--text);
                 font-size: clamp(0.8rem, 2vw, 2.2rem);
             }
         }
@@ -68,7 +68,7 @@ main {
     width: clamp(60px, 20vw, 90px);
     height: 6vh;
     border-radius: 25px;
-    background-color: #444444;
+    background-color: var(--buttonBox);
     opacity: 0.8;
     transform: translate(-50%);
     display: flex;
@@ -77,10 +77,10 @@ main {
     z-index: 1;
     i {
         font-size: clamp(2.3em, 5vw, 3rem);
-        color: #000000;
+        color: var(--button);
         cursor: pointer;
         &:hover {
-            color: #e4e4e4
+            color: var(--buttonHover);
         }
     }
 }
@@ -117,7 +117,7 @@ main {
                 //height: 20vh;
                 opacity: 0.8;
                 overflow: visible;
-                box-shadow: -2px 8px 6px #00000050;
+                box-shadow: -2px 8px 6px var(--subjectShadow);
                 transform-style: preserve-3d;
                 transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
                 transition: 0.7s transform;
@@ -151,7 +151,7 @@ main {
                 }
                 span {
                     text-align: center;
-                    color: black;
+                    color: var(--text);
                     font-size: clamp(0.8rem, 2vw, 2.2rem);
                 }
             }

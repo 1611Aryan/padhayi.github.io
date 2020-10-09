@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!--fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <!--ColorScheme-->
+    <link rel="stylesheet" type="text/css" href="../SASS/colorFile.css">
     <!--Header and Footer-->
     <link rel="stylesheet" type="text/css" href="../Sass/header_footer_nav.css">
     <!--grid-->
@@ -60,7 +62,11 @@
                         <span>Lorem</span>
                     </a>
                 </div>
-                <button id="darkModeToggle">Dark Mode</button>
+                <!--!button-->
+                <div id="switchHouse">
+                    <p>Dark Mode</p>
+                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+                </div>
             </div>
         </div>
     </section>

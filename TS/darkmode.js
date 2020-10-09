@@ -1,58 +1,38 @@
-var darkmode = '<link rel="stylesheet" type="text/css" href="SASS/darkmode.css">';
-///////////////
-var darkmode2 = '<link rel="stylesheet" type="text/css" href="../SASS/darkmode.css">';
-///////////////////////////
-var setTheme = function (color) {
-    sessionStorage.setItem("scheme", color);
-};
-var setCounter = function (j) {
-    sessionStorage.setItem("memory", j);
-};
-var getTheme = function () {
-    return sessionStorage.getItem("scheme");
-};
-var getCounter = function () {
-    return sessionStorage.getItem("memory");
-};
-///////////////////////////
-if (typeof getCounter() != "string") {
-    setCounter("0");
-}
-///////////////////////
-var i = parseInt(sessionStorage.getItem("memory"));
-///////////////////
-var darkCSS = function () {
+var checkbox = document.querySelector("input[name=theme]");
+//?Checks if dark mode was turned on previous page or if page was refreshed//
+window.onload = function () {
     if (getTheme() == "dark") {
-        $("header").append(darkmode);
-        $("header").append(darkmode2);
-    }
-    if (getTheme() != "dark" || getTheme() == "light") {
-        $(darkmode).prop("disabled", true);
-        $(darkmode2).prop("disabled", true);
-        if (i % 2 != 0) {
-            window.location.reload();
-            i++;
-        }
+        document.documentElement.setAttribute("data-theme", getTheme());
+        document.getElementById("switch").checked = true;
     }
 };
-///////////////
-var enable = function (i) {
-    if (i % 2 == 0) {
+//?switch toggle event//
+checkbox.addEventListener("change", function () {
+    if (this.checked) {
+        trans();
+        document.documentElement.setAttribute("data-theme", "dark");
         setTheme("dark");
-        darkCSS();
+        console.log(getTheme());
     }
     else {
+        trans();
+        document.documentElement.setAttribute("data-theme", "light");
         setTheme("light");
-        darkCSS();
+        console.log(getTheme());
     }
-};
-////////////////////////
-$("#darkModeToggle").on("click touch", function () {
-    enable(i);
-    console.log(i);
-    setCounter(i + "");
-    i++;
-    console.log(sessionStorage.getItem("memory"));
 });
-////////////////////////
-setInterval(darkCSS, 10);
+//?saves current theme value//
+var setTheme = function (theme) {
+    sessionStorage.setItem("theme", theme);
+};
+//?gets current theme value//
+var getTheme = function () {
+    return sessionStorage.getItem("theme");
+};
+//?smoothes the change of theme//
+var trans = function () {
+    document.documentElement.classList.add("transition");
+    window.setTimeout(function () {
+        document.documentElement.classList.remove("transition");
+    }, 1000);
+};

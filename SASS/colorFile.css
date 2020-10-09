@@ -1,0 +1,64 @@
+html {
+  --text: #000000;
+  --backgroundColor: #ffffff;
+  --headerColor: #d8d8d8;
+  --navMenu: #FFA800;
+  --navBorder: #000000;
+  --navHover: #fcf37a;
+  --switch: #ffffff;
+  --switchButton: #000000;
+  --tabFont: #ffffff;
+  --subjectShadow: #00000050;
+  --buttonBox: #444444;
+  --button: #000000;
+  --buttonHover: #e4e4e4;
+  --footerColor: #d8d8d8;
+}
+
+html[data-theme='dark'] {
+  --text: #000000;
+  --backgroundColor: #555555;
+  --headerColor: #222222;
+  --navMenu: #d18d04;
+  --navBorder: #000000;
+  --navHover: #fcf37a;
+  --switch: #000000;
+  --switchButton: #ffffff;
+  --tabFont: #ffffff;
+  --subjectShadow: #00000050;
+  --buttonBox: #444444;
+  --button: #000000;
+  --buttonHover: #e4e4e4;
+  --footerColor: #222222;
+  -webkit-filter: saturate(120%) brightness(90%) contrast(90%) !important;
+          filter: saturate(120%) brightness(90%) contrast(90%) !important;
+}
+
+html[data-theme='dark'] #tabs {
+  -webkit-filter: brightness(90%) !important;
+          filter: brightness(90%) !important;
+}
+
+html[data-theme='dark'] #tabs div {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html[data-theme='dark'] #tabs div:hover {
+  -webkit-filter: saturate(150%) brightness(90%) !important;
+          filter: saturate(150%) brightness(90%) !important;
+}
+
+html[data-theme='dark'] #tabs div:hover span {
+  color: #eeeeee;
+}
+
+html[data-theme='dark'] #tabs div a {
+  text-decoration: none;
+}
+
+html[data-theme='dark'] #girl svg {
+  -webkit-filter: brightness(90%) !important;
+          filter: brightness(90%) !important;
+}
+/*# sourceMappingURL=colorFile.css.map */

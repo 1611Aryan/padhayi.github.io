@@ -1,65 +1,37 @@
-const darkmode: string =
-  '<link rel="stylesheet" type="text/css" href="SASS/darkmode.css">';
-///////////////
-const darkmode2 =
-  '<link rel="stylesheet" type="text/css" href="../SASS/darkmode.css">';
-///////////////////////////
-const setTheme = (color: string) => {
-  sessionStorage.setItem("scheme", color);
-};
-const setCounter = (j: string) => {
-  sessionStorage.setItem("memory", j);
-};
-const getTheme = () => {
-  return sessionStorage.getItem("scheme");
-};
-const getCounter = () => {
-  return sessionStorage.getItem("memory");
-};
-///////////////////////////
-if (typeof getCounter() != "string") {
-  setCounter("0");
-}
-///////////////////////
-
-let i: number = parseInt(sessionStorage.getItem("memory"));
-
-///////////////////
-const darkCSS = () => {
+const checkbox = document.querySelector("input[name=theme]");
+//?Checks if dark mode was turned on previous page or if page was refreshed//
+window.onload = function () {
   if (getTheme() == "dark") {
-    $("header").append(darkmode);
-    $("header").append(darkmode2);
-  }
-  if (getTheme() != "dark" || getTheme() == "light") {
-    $(darkmode).prop("disabled", true);
-    $(darkmode2).prop("disabled", true);
-    if (i % 2 != 0) {
-      window.location.reload();
-      i++;
-    }
+    document.documentElement.setAttribute("data-theme", getTheme());
+    document.getElementById("switch").checked = true;
   }
 };
-///////////////
-const enable = (i: number) => {
-  if (i % 2 == 0) {
+//?switch toggle event//
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
     setTheme("dark");
-    darkCSS();
+    console.log(getTheme());
   } else {
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
     setTheme("light");
-    darkCSS();
+    console.log(getTheme());
   }
-};
-
-////////////////////////
-$("#darkModeToggle").on("click touch", () => {
-  enable(i);
-  console.log(i);
-  setCounter(i + "");
-  i++;
-
-  console.log(sessionStorage.getItem("memory"));
 });
-
-////////////////////////
-
-setInterval(darkCSS, 10);
+//?saves current theme value//
+const setTheme = (theme: string) => {
+  sessionStorage.setItem("theme", theme);
+};
+//?gets current theme value//
+const getTheme = () => {
+  return sessionStorage.getItem("theme");
+};
+//?smoothes the change of theme//
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};

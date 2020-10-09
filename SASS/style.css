@@ -1,7 +1,3 @@
-.white {
-  color: white;
-}
-
 #tabs {
   top: 50vh;
   margin-left: -3rem;
@@ -18,14 +14,12 @@
 }
 
 #tabs div:hover {
-  stroke: #8f8f8f;
-  stroke-width: 2px;
   -webkit-filter: saturate(150%);
           filter: saturate(150%);
 }
 
 #tabs div:hover span {
-  color: white;
+  color: var(--tabFont);
 }
 
 #tabs div a {
@@ -39,11 +33,7 @@
   margin: 4% 20%;
   cursor: pointer;
   z-index: 99;
-  color: black;
-}
-
-#tabs span:hover {
-  color: white;
+  color: var(--text);
 }
 
 #tabs svg {
@@ -259,8 +249,8 @@
   width: 250vh;
   height: 250vh;
   border-radius: 50%;
-  border: 2px solid #000000;
-  background-color: #FFA800;
+  border: 2px solid var(--navBorder);
+  background-color: var(--navMenu);
   opacity: 0.75;
 }
 
@@ -292,7 +282,7 @@
 }
 
 #seasame #navExt #organize div:hover svg path {
-  fill: #fcf37a;
+  fill: var(--navHover);
 }
 
 #seasame #navExt #organize svg {
@@ -307,7 +297,7 @@
   margin-top: 2rem;
   left: 50%;
   text-decoration: none;
-  color: black;
+  color: var(--text);
   font-size: 2rem;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
