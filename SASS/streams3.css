@@ -37,8 +37,8 @@ main a section {
           box-shadow: -2px 8px 6px var(--subjectShadow);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
-          transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
+  -webkit-transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9) translate3d(0, 0, 0);
+          transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9) translate3d(0, 0, 0);
   -webkit-transition: 0.7s -webkit-transform;
   transition: 0.7s -webkit-transform;
   transition: 0.7s transform;
@@ -57,8 +57,8 @@ main a section::before {
           filter: brightness(60%);
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transform: skew(-41deg, 0);
-          transform: skew(-41deg, 0);
+  -webkit-transform: skew(-41deg, 0) translate3d(0, 0, 0);
+          transform: skew(-41deg, 0) translate3d(0, 0, 0);
 }
 
 main a section::after {
@@ -73,14 +73,14 @@ main a section::after {
           filter: brightness(60%);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transform: skew(0, -49deg);
-          transform: skew(0, -49deg);
+  -webkit-transform: skew(0, -49deg) translate3d(0, 0, 0);
+          transform: skew(0, -49deg) translate3d(0, 0, 0);
   z-index: 2;
 }
 
 main a section:hover {
-  -webkit-transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75);
-          transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75);
+  -webkit-transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75) translate3d(0, 0, 0);
+          transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75) translate3d(0, 0, 0);
 }
 
 main a section span {
@@ -167,8 +167,8 @@ main a section span {
             box-shadow: -2px 8px 6px var(--subjectShadow);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
-    -webkit-transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
-            transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9);
+    -webkit-transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9) translate3d(0, 0, 0);
+            transform: rotate(-5deg) skew(-5deg, 6.5deg) scale(0.9) translate3d(0, 0, 0);
     -webkit-transition: 0.7s -webkit-transform;
     transition: 0.7s -webkit-transform;
     transition: 0.7s transform;
@@ -186,8 +186,8 @@ main a section span {
             filter: brightness(60%);
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-transform: skew(-41deg, 0);
-            transform: skew(-41deg, 0);
+    -webkit-transform: skew(-41deg, 0) translate3d(0, 0, 0);
+            transform: skew(-41deg, 0) translate3d(0, 0, 0);
   }
   main a section::after {
     content: '';
@@ -201,13 +201,13 @@ main a section span {
             filter: brightness(60%);
     -webkit-transform-origin: right;
             transform-origin: right;
-    -webkit-transform: skew(0, -49deg);
-            transform: skew(0, -49deg);
+    -webkit-transform: skew(0, -49deg) translate3d(0, 0, 0);
+            transform: skew(0, -49deg) translate3d(0, 0, 0);
     z-index: 2;
   }
   main a section:hover {
-    -webkit-transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75);
-            transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75);
+    -webkit-transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75) translate3d(0, 0, 0);
+            transform: rotate(-10deg) skew(-4deg, 6.5deg) scale(0.75) translate3d(0, 0, 0);
   }
   main a section span {
     text-align: center;
