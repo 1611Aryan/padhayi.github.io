@@ -1,0 +1,101 @@
+#content {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 8vh;
+  width: 100vw;
+  height: 82vh;
+}
+
+#content #streamName {
+  width: 100vw;
+  height: 8vh;
+  background-color: #0371d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content #streamName span {
+  font-size: 1.7em;
+}
+
+#content #stickyNotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 74vh;
+}
+
+#content #stickyNotes .subject {
+  width: 25%;
+  height: 45%;
+}
+
+#content #stickyNotes .subject svg {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: notes 3s ease-in-out infinite alternate;
+          animation: notes 3s ease-in-out infinite alternate;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  cursor: pointer;
+}
+
+#content #stickyNotes .subject svg .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-10%, -5%);
+          transform: translate(-10%, -5%);
+  font-size: 2rem;
+}
+
+@-webkit-keyframes notes {
+  0% {
+    -webkit-transform: rotate3d(0deg);
+            transform: rotate3d(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(20deg) rotateZ(-8deg);
+            transform: rotateX(20deg) rotateZ(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0deg);
+            transform: rotate3d(0deg);
+  }
+}
+
+@keyframes notes {
+  0% {
+    -webkit-transform: rotate3d(0deg);
+            transform: rotate3d(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(20deg) rotateZ(-8deg);
+            transform: rotateX(20deg) rotateZ(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0deg);
+            transform: rotate3d(0deg);
+  }
+}
+/*# sourceMappingURL=subjects.css.map */
