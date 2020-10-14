@@ -62,12 +62,13 @@ var _loop_1 = function (i) {
         var k = $("#carryOverText" + i + "").html();
         k = k.replace(/ /g, "_");
         setSubject(k);
-        console.log(k);
     });
 };
+//?looping through all streams to find which was clicked
 for (var i = 0; i < noOfStreams1; i++) {
     _loop_1(i);
 }
+//?setting the stream clicked to session storage
 var setSubject = function (subject) {
     sessionStorage.setItem("subject", subject);
 };

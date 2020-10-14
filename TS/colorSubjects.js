@@ -12,6 +12,7 @@ var randColor = function () {
         return color;
     }
 };
-for (var i = 1; i <= 16; i++) {
-    $("section:nth-child(" + i + ")").css("backgroundColor", randColor);
+for (var i = 1; i <= noOfSubjects; i++) {
+    $("#paper:nth-child(" + i + ")").css("fill", randColor);
 }
+$("#streamName").css("backgroundColor", randColor);

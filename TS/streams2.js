@@ -59,7 +59,6 @@ var _loop_1 = function (i) {
         var k = $("#carryOverText" + i + "").html();
         k = k.replace(/ /g, "_");
         setSubject(k);
-        console.log(k);
     });
 };
 for (var i = 0; i < noOfStreams2; i++) {
