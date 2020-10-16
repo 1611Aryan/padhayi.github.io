@@ -85,6 +85,7 @@ header nav i:hover {
   border-radius: 50%;
   border: 2px solid var(--navBorder);
   background-color: var(--navMenu);
+  opacity: 0.75;
 }
 
 #seasame #navExt #organize {
