@@ -3,7 +3,7 @@
 var addStream1 = function (num, Stream) {
     var section = '<a   id="carryOver' +
         num +
-        '" href="subjects.html"><section id="coloredSquare"><span id="carryOverText' +
+        '" href="subjects.php"><section id="coloredSquare"><span id="carryOverText' +
         num +
         '">' +
         Stream +
@@ -15,7 +15,7 @@ var addStream1 = function (num, Stream) {
 var addStream2 = function (num, Stream) {
     var section = '<a id="carryOver' +
         num +
-        '" href="subjects.html"><section id="coloredSquare" ><span id="carryOverText' +
+        '" href="subjects.php"><section id="coloredSquare" ><span id="carryOverText' +
         num +
         '">' +
         Stream +

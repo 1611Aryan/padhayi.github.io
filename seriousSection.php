@@ -12,68 +12,18 @@
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
     <!--ColorScheme-->
-    <link rel="stylesheet" type="text/css" href="../SASS/colorFile.css">
+    <link rel="stylesheet" type="text/css" href="SASS/colorFile.css">
     <!--Header and Footer-->
-    <link rel="stylesheet" type="text/css" href="../Sass/header_footer_nav.css">
+    <link rel="stylesheet" type="text/css" href="SASS/header_footer_nav.css">
     <!--This Page-->
-    <link rel="stylesheet" type="text/css" href="../Sass/ravenclaw.css">
+    <link rel="stylesheet" type="text/css" href="SASS/ravenclaw.css">
     <!--responsive-->
-    <link rel="stylesheet" type="text/css" href="../Sass/responsive.css">
+    <link rel="stylesheet" type="text/css" href="SASS/responsive.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">
-                <h2>Loren Epsum</h2>
-            </a>
-            <i id="toggle" class="fas fa-bars "></i>
-        </nav>
-    </header>
-    <section id="seasame">
-        <div id="navExt">
-            <div id="organize">
-                <div id="one">
-                    <a href="">
-                        <svg width="541" height="111" viewBox="0 0 541 111" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M55.1235 0.196289H485.631C516.007 0.196289 540.631 24.8206 540.631 55.1963C540.631 85.5719 516.007 110.196 485.631 110.196H55.1235C24.7479 110.196 0.123535 85.5719 0.123535 55.1963C0.123535 24.8206 24.7479 0.196289 55.1235 0.196289Z"
-                                fill="#ffffff" />
-                        </svg>
-                        <span>Lorem</span>
-                    </a>
-                </div>
-                <div id="two">
-                    <a href="">
-                        <svg width="541" height="111" viewBox="0 0 541 111" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M55.1235 0.196289H485.631C516.007 0.196289 540.631 24.8206 540.631 55.1963C540.631 85.5719 516.007 110.196 485.631 110.196H55.1235C24.7479 110.196 0.123535 85.5719 0.123535 55.1963C0.123535 24.8206 24.7479 0.196289 55.1235 0.196289Z"
-                                fill="#ffffff" />
-                        </svg>
-                        <span>Lorem</span>
-                    </a>
-                </div>
-                <div id="three">
-                    <a href="">
-                        <svg width="541" height="111" viewBox="0 0 541 111" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M55.1235 0.196289H485.631C516.007 0.196289 540.631 24.8206 540.631 55.1963C540.631 85.5719 516.007 110.196 485.631 110.196H55.1235C24.7479 110.196 0.123535 85.5719 0.123535 55.1963C0.123535 24.8206 24.7479 0.196289 55.1235 0.196289Z"
-                                fill="#ffffff" />
-                        </svg>
-                        <span>Lorem</span>
-                    </a>
-                </div>
-                <!--!button-->
-                <div id="switchHouse">
-                    <p>Dark Mode</p>
-                    <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include 'php/header.php'; ?> 
+    <?php include 'php/seasame.php'; ?> 
     <main id="dartBoard">
         <div id="choosenOne">
             <h2>Choosen One</h2>
@@ -341,19 +291,10 @@
             </svg>
         </div>
     </main>
-    <footer>
-        <h2>logo</h2>
-        <div id="handles">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-linkedin"></i>
-        </div>
-        <div id="email"></div>
-    </footer>
+    <?php include 'php/footer.php'; ?> 
 
-    <script src="../TS/nav.js"></script>
-    <script src="../TS/darkmode.js"></script>
+    <script src="TS/nav.js"></script>
+    <script src="TS/darkmode.js"></script>
 </body>
 
 </html>

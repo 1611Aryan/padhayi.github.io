@@ -41,6 +41,10 @@
   cursor: pointer;
 }
 
+#girl {
+  z-index: -1;
+}
+
 #girl svg {
   position: absolute;
   right: 0;

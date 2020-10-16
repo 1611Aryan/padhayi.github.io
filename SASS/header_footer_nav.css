@@ -57,7 +57,7 @@ header nav i {
   font-size: 2rem;
   margin-right: 1rem;
   cursor: pointer;
-  z-index: 9;
+  z-index: 9999999;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -68,13 +68,14 @@ header nav i:hover {
 
 #seasame {
   display: none;
-  z-index: 9;
+  z-index: 99;
   opacity: 0.75;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
 #seasame #navExt {
+  z-index: 9;
   position: absolute;
   top: 0;
   right: 0;
