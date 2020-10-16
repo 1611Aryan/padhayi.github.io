@@ -1,18 +1,20 @@
 var randColor = function () {
-    var values = "1234567890ABCDEF";
-    var val = values.split("");
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-        color += val[Math.floor(Math.random() * 16)];
+    var color = {
+        r: Math.random(),
+        g: Math.random(),
+        b: Math.random()
+    };
+    if (color.r == 0 && color.g == 0 && color.b == 0) {
+        color = {
+            r: 0,
+            g: 0,
+            b: 0
+        };
     }
-    if (color == "#000000") {
-        return "#ffffff";
-    }
-    else {
-        return color;
-    }
+    return 'rgba(' + color.r * 255 + ',' + color.g * 255 + ',' + color.b * 255 + ')';
 };
-for (var i = 1; i <= noOfSubjects; i++) {
-    $("#paper:nth-child(" + i + ")").css("fill", randColor);
-}
-$("#streamName").css("backgroundColor", randColor);
+var paper = document.querySelectorAll('#paper');
+paper.forEach(function (element) {
+    element.style.fill = randColor();
+});
+document.getElementById('streamName').style.backgroundColor = randColor();

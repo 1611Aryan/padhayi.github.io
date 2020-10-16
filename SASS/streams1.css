@@ -109,6 +109,8 @@ main a section span {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
 }
 
 #buttons i {

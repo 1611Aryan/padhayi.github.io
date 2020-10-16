@@ -86,6 +86,12 @@
             transform-origin: top;
     transform-box: fill-box;
   }
+  #dartBoard #carouselContainer {
+    height: 80%;
+  }
+  #dartBoard #carouselContainer .svgSize {
+    width: clamp(30rem, 65vw, 200rem);
+  }
 }
 
 @media (max-width: 768px) {

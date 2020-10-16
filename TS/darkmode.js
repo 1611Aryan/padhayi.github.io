@@ -12,13 +12,11 @@ checkbox.addEventListener("change", function () {
         trans();
         document.documentElement.setAttribute("data-theme", "dark");
         setTheme("dark");
-        console.log(getTheme());
     }
     else {
         trans();
         document.documentElement.setAttribute("data-theme", "light");
         setTheme("light");
-        console.log(getTheme());
     }
 });
 //?saves current theme value//

@@ -1,17 +1,24 @@
+//*Jquery Free
+//?Generates random rgba color
 var randColor = function () {
-    var values = "1234567890ABCDEF";
-    var val = values.split("");
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-        color += val[Math.floor(Math.random() * 16)];
+    var color = {
+        r: Math.random(),
+        g: Math.random(),
+        b: Math.random()
+    };
+    if (color.r == 0 && color.g == 0 && color.b == 0) {
+        color = {
+            r: 0,
+            g: 0,
+            b: 0
+        };
     }
-    if (color == "#000000") {
-        return "#ffffff";
-    }
-    else {
-        return color;
-    }
+    return 'rgba(' + color.r * 255 + ',' + color.g * 255 + ',' + color.b * 255 + ')';
 };
-for (var i = 1; i <= 16; i++) {
-    $("section:nth-child(" + i + ")").css("backgroundColor", randColor);
-}
+//?/
+//? Sets the randcolor to all the stream squares
+var coloredSquare = document.querySelectorAll('#coloredSquare');
+coloredSquare.forEach(function (element) {
+    element.style.backgroundColor = randColor();
+});
+//?/

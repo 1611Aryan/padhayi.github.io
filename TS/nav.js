@@ -1,33 +1,34 @@
-var toggle = $("#toggle");
-var seasame = $("#seasame");
-var header = $("header");
-var ignore = function () {
-    toggle.on("mouseenter", function () {
-        //alert("yo");
-        return false;
-    });
-};
-//menu closing when mouse leaves menu
-var vanish = function () {
-    if (seasame.css("display") != "none") {
-        if (toggle.mouseenter()) {
-            alert("hi");
-        }
-        else {
-            seasame.hide("swing");
-            //remove the X
-            toggle.toggleClass("fas fa-times ");
-            //insert the hamburger
-            toggle.toggleClass("fas fa-bars ");
-        }
+//!Jquery Free
+var toggle = document.getElementById('toggle');
+var seasame = document.getElementById('seasame');
+var header = document.getElementById('header');
+var counterNav = 0;
+var navInAction = function () {
+    if (counterNav % 2 == 0) {
+        seasame.style.display = 'block';
+        seasame.style.opacity = '1';
+        //?remove the hamburger
+        toggle.classList.toggle("fa-bars");
+        //?insert the X
+        toggle.classList.toggle("fa-times");
+        counterNav++;
+    }
+    else {
+        seasame.style.opacity = '0';
+        seasame.addEventListener('webkitTransitionEnd', function (e) {
+            seasame.style.display = 'none';
+        });
+        //?remove the hamburger
+        toggle.classList.toggle("fa-bars");
+        //?insert the X
+        toggle.classList.toggle("fa-times");
+        counterNav++;
     }
 };
 //menu opening closing
-toggle.on("click touch", function () {
-    seasame.toggle("swing");
-    //remove the hamburger
-    toggle.toggleClass("fas fa-bars ");
-    //insert the X
-    toggle.toggleClass("fas fa-times");
+toggle.addEventListener('click', function () {
+    navInAction();
 });
-//seasame.on("mouseleave", vanish);
+toggle.addEventListener('touch', function () {
+    navInAction();
+});

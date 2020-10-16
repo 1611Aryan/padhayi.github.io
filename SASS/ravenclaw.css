@@ -1,0 +1,95 @@
+#dartBoard {
+  position: absolute;
+  width: 100%;
+  height: 82vh;
+  top: 8vh;
+  left: 0;
+  z-index: -1;
+}
+
+#dartBoard #choosenOne {
+  width: 75%;
+  margin: 0 auto;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 0 25px 25px;
+  -webkit-box-shadow: 0px 5px 7px #c8c8c8;
+          box-shadow: 0px 5px 7px #c8c8c8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #235;
+  margin-bottom: 1.5rem;
+}
+
+#dartBoard #choosenOne h2:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+#dartBoard #carouselContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#dartBoard #carouselContainer .svgSize {
+  width: clamp(35rem, 35vw, 48rem);
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+#dartBoard #carouselContainer .svgSize .roundAndRound {
+  -webkit-animation: roundAndRound 75s linear infinite;
+          animation: roundAndRound 75s linear infinite;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#dartBoard #carouselContainer .svgSize #midCircle {
+  -webkit-animation: roundAndRound 100s linear infinite;
+          animation: roundAndRound 100s linear infinite;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#dartBoard #carouselContainer .svgSize #centerCircle {
+  fill: var(--backgroundColor);
+}
+
+@-webkit-keyframes roundAndRound {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes roundAndRound {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=ravenclaw.css.map */
